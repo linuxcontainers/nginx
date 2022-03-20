@@ -1,7 +1,7 @@
-FROM linuxcontainers/alpine:3.14.3
+FROM linuxcontainers/alpine:3.15.1
 
-ENV NGINX_VERSION 1.21.4
-ENV NJS_VERSION   0.7.0
+ENV NGINX_VERSION 1.21.6
+ENV NJS_VERSION   0.7.2
 ENV PKG_RELEASE   1
 
 LABEL maintainer="Peter <peter@linuxcontainers.dev>" 
@@ -53,7 +53,7 @@ RUN set -x \
                 libc-dev \
                 make \
                 openssl-dev \
-                pcre-dev \
+                pcre2-dev \
                 zlib-dev \
                 linux-headers \
                 libxslt-dev \
@@ -68,7 +68,7 @@ RUN set -x \
                 export HOME=${tempDir} \
                 && cd ${tempDir} \
                 && curl -f -O https://hg.nginx.org/pkg-oss/archive/${NGINX_VERSION}-${PKG_RELEASE}.tar.gz \
-                && PKGOSSCHECKSUM=\"f917c27702aa89cda46878fc80d446839c592c43ce7f251b3f4ced60c7033d34496a92d283927225d458cbc4f2f89499e7fb16344923317cd7725ad722eaf93e *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\" \
+                && PKGOSSCHECKSUM=\"29ec1c635da36b7727953544e1a20e9d75bd9d2050e063b9f81f88ca07bb7ea0b65cef46d0f3cb7134b38ce9b94ecada631619f233231845a3d8a16b6ad0db82 *${NGINX_VERSION}-${PKG_RELEASE}.tar.gz\" \
                 && if [ \"\$(openssl sha512 -r ${NGINX_VERSION}-${PKG_RELEASE}.tar.gz)\" = \"\$PKGOSSCHECKSUM\" ]; then \
                     echo \"pkg-oss tarball checksum verification succeeded!\"; \
                 else \
