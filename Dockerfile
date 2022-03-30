@@ -1,4 +1,4 @@
-FROM linuxcontainers/alpine:3.15.1
+FROM linuxcontainers/alpine:3.15.3
 
 ENV NGINX_VERSION 1.21.6
 ENV NJS_VERSION   0.7.2
