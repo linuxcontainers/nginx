@@ -5,8 +5,8 @@
 [![Docker Stars](https://img.shields.io/docker/stars/linuxcontainers/nginx.svg?style=for-the-badge&logo=docker)](https://hub.docker.com/r/linuxcontainers/nginx/)
 ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/linuxcontainers/nginx/latest?logo=docker&style=for-the-badge)
 
-[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.15.1-green.svg?style=for-the-badge)](https://alpine-nginxlinux.org/)
-[![NGINX Version](https://img.shields.io/badge/Nginx%20version-v1.21.6-green.svg?style=for-the-badge)](https://nginx.org/)
+[![Alpine Version](https://img.shields.io/badge/Alpine%20version-v3.16.0-green.svg?style=for-the-badge)](https://alpine-nginxlinux.org/)
+[![NGINX Version](https://img.shields.io/badge/Nginx%20version-v1.22.0-green.svg?style=for-the-badge)](https://nginx.org/)
 
 This Docker image [(linuxcontainers/nginx)](https://hub.docker.com/r/linuxcontainers/nginx/) is based on the minimal [Alpine Linux](https://alpine-nginxlinux.org/).
 
@@ -14,9 +14,9 @@ This Docker image [(linuxcontainers/nginx)](https://hub.docker.com/r/linuxcontai
 
 This docker image is the base Alpine Linux. For more info on versions & support see [Releases](https://wiki.alpine-nginxlinux.org/wiki/Alpine_Linux:Releases)
 
-##### NGINX Version 1.21.6 
+##### NGINX Version 1.22.0 
 
-This docker image nginx-1.21.6 is the stable version has been released, incorporating new features and bug fixes from the 1.17.x mainline branch. For more info on versions & support see [Releases](http://nginx.org/en/CHANGES-1.19)
+This docker image nginx-1.22.0 is the stable version has been released, incorporating new features and bug fixes from the 1.17.x mainline branch. For more info on versions & support see [Releases](http://nginx.org/en/CHANGES-1.19)
 
 ----
 
